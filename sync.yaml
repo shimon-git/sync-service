@@ -1,0 +1,30 @@
+esxi_hosts:
+  - host: 192.168.198.17
+    port: 443
+    username: <USER>
+    password: <PASSWORD>
+
+mongodb:
+  host: localhost
+  port: 27017
+  username: <USER>
+  password: <PASSWORD>
+  db: esxi
+  collection: vms
+
+api_server:
+  host: 0.0.0.0
+  port: 4000
+
+sync:
+  interval: 120
+  timeout: 30
+
+endpoints:
+  vm-group-service-rename-vm: http://vm-group-service/vms/group/rename-vms
+  auth-service-rename-vm: http://auth-service/rename/vm
+
+redis:
+  host: localhost
+  port: 6379
+  password: 1234

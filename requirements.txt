@@ -1,0 +1,7 @@
+pyvmomi
+pymongo
+pyyaml
+fastapi
+uvicorn
+redis[async]
+httpx
