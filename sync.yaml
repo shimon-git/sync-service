@@ -1,12 +1,12 @@
 esxi_hosts:
-  - host: 192.168.198.17
-    port: 443
+  - host: <HOST_IP>
+    port: <PORT>
     username: <USER>
     password: <PASSWORD>
 
 mongodb:
-  host: localhost
-  port: 27017
+  host: <HOST_IP>
+  port: <PORT>
   username: <USER>
   password: <PASSWORD>
   db: esxi
@@ -14,7 +14,7 @@ mongodb:
 
 api_server:
   host: 0.0.0.0
-  port: 4000
+  port: <PORT>
 
 sync:
   interval: 120
@@ -25,6 +25,5 @@ endpoints:
   auth-service-rename-vm: http://auth-service/rename/vm
 
 redis:
-  host: localhost
-  port: 6379
-  password: 1234
+  host: <HOST_IP>
+  port: <PORT>
