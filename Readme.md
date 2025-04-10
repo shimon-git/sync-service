@@ -153,34 +153,34 @@ This script will:
 </p>
 
 <pre><code>esxi_hosts:
-  - host: <HOST_IP>            # IP address of the ESXi host
-    port: <PORT>               # HTTPS port for ESXi (default: 443)
-    username: <USER>           # ESXi login username
-    password: <PASSWORD>       # ESXi login password
+  - host: HOST_IP            # IP address of the ESXi host
+    port: PORT               # HTTPS port for ESXi (default: 443)
+    username: USER           # ESXi login username
+    password: PASSWORD       # ESXi login password
 
 mongodb:
-  host: <HOST_IP>              # MongoDB host (can be IP or hostname)
-  port: <PORT>                 # MongoDB port
-  username: <USER>             # MongoDB username
-  password: <PASSWORD>         # MongoDB password
-  db: esxi                     # Name of the MongoDB database
-  collection: vms              # Collection where VM documents are stored
+  host: HOST_IP              # MongoDB host (can be IP or hostname)
+  port: PORT                 # MongoDB port
+  username: USER             # MongoDB username
+  password: PASSWORD         # MongoDB password
+  db: esxi                   # Name of the MongoDB database
+  collection: vms            # Collection where VM documents are stored
 
 api_server:
-  host: 0.0.0.0                # IP to bind the API server (0.0.0.0 for all interfaces)
-  port: <PORT>                 # Port to expose the FastAPI service
+  host: 0.0.0.0              # IP to bind the API server (0.0.0.0 for all interfaces)
+  port: PORT                 # Port to expose the FastAPI service
 
 sync:
-  interval: 120                # Sync interval in seconds (how often VMs are re-synced)
-  timeout: 30                  # Request timeout duration (in seconds)
+  interval: 120               # Sync interval in seconds (how often VMs are re-synced)
+  timeout: 30                 # Request timeout duration (in seconds)
 
 endpoints:
   vm-group-service-rename-vm: http://vm-group-service/vms/group/rename-vms  # Endpoint for VM group renaming
   auth-service-rename-vm: http://auth-service/rename/vm                     # Endpoint for session renaming
 
 redis:
-  host: <HOST_IP>              # Redis server hostname
-  port: <PORT>                 # Redis server port
+  host: HOST_IP              # Redis server hostname
+  port: PORT                 # Redis server port
 </code></pre>
 
 <hr />
